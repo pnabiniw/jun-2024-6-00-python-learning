@@ -36,3 +36,10 @@ staging area and so on)
     => Saving your codes and creating a new checkpoint
      => It only saves the code in staging area
 
+8. git status
+    => Checks the current status of your git repo
+
+9. git branch -M main
+
+10 git remote add origin <ssh_link>
+11. git remote -v
