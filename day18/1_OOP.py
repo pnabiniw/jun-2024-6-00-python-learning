@@ -15,14 +15,20 @@ class Vehicle:  # class is a keyword to create class. Vehicle is an identifier. 
         self.wheels = wheels
         # here self.color and self.wheels are instance attribute
 
+    def get_details(self):  # This is a method (instance method)
+        return f"The color of the vehicle is {self.color} and there are {self.wheels} wheels"
+
 
 car = Vehicle("red", 4)  # This creates the Vehicle object
+print(type(car))
 engine = car.engine_type  # Property invoke using Vehicle object
 print(engine)  # Petrol
 
 print(car.color)  # red
 print(car.wheels)  # 4
-print(Vehicle.color)
+# print(Vehicle.color)
+
+print(car.get_details())
 
 
 print(Vehicle.engine_type)  # Property invoke using class Vehicle
