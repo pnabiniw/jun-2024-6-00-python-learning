@@ -60,6 +60,7 @@ class C(A):
 
 class A:
     a = 1
+    e = 20
 
 
 class B(A):
@@ -68,6 +69,7 @@ class B(A):
 
 class C(A):
     c = 3
+    e = 15
 
 
 class D(B, C):
@@ -75,7 +77,8 @@ class D(B, C):
 
 
 class E(D):
-    e = 5
+    f = 12
+
 
 # MRO stands for Method Resolution Order
 # It is a rule which says the order of attributes in an inheritance
